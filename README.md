@@ -15,7 +15,7 @@
  echo '      dte=       6.                 ' >> params
 # ------------------ COMPILE ----------------------------
 #netCDF output without OpenACC(serial) (link to your own path)
-pgfortran -o  a.out pom-openacc.f -cuda -acc=gpu -mcmodel=medium -I/public/software/.local/easybuild/software/netCDF-All/NVHPC-23.1/include -L/public/software/.local/easybuild/software/netCDF-All/NVHPC-23.1/lib -lnetcdff
+#pgfortran -o  a.out pom-openacc.f -cuda -acc=gpu -mcmodel=medium -I/public/software/.local/easybuild/software/netCDF-All/NVHPC-23.1/include -L/public/software/.local/easybuild/software/netCDF-All/NVHPC-23.1/lib -lnetcdff
 
 #netCDF output with OpenACC(parallel) (link to your own path)
 #pgfortran -o -cuda -acc=gpu a.out pom-openacc.f  -mcmodel=medium -I/public/software/.local/easybuild/software/netCDF-All/NVHPC-23.1/include -L/public/software/.local/easybuild/software/netCDF-All/NVHPC-23.1/lib -lnetcdff
